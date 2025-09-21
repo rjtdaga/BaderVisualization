@@ -1,2 +1,6 @@
-# BaderVisualization
-This code is to visualize the ACF.dat file generated from Bader charge analysis as a MATLAB scatter plot using the POSCAR file
+# Bader Visualization
+This code is to visualize the ACF.dat file generated from Bader charge analysis as a MATLAB scatter plot using the POSCAR file. The data points in the scatter plot represent the atoms in the ACF.dat file at their respective cartesian coordinates.
+# Running the code
+To run the code without any bugs, make sure the path to the ACF.dat and POSCAR file are correctly mentioned in the line 6, 21 and 22. The code will still run if the path to POSCAR file is not mentioned. However, all atoms will be colored black in that case, with the size scale of all atoms as 1. <br>
+The expected output of the MATLAB code would a 3-D scatter plot, with all the atoms placed at their respective positions. The charges on the respective atoms would be visible once the user hovers over tha atoms (data points). Make sure you have disabled the 3-D rotate tool to be able to view the charge upon hovering. <br>
+The MATLAB program currently have the sizes, colors and valence electron to calculate charge for C, N, F, O, H, Pt, Fe, Ru, Cu, and Ag. If the system consists of any other atom, it will be displayed as a black atom with the number of valence electrons given by ACF.dat file visible as the text upon hovering. The size scaling for the atom will be set to unity.
